@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FurGummies</title>
+  <style>
+    body {
+      background-color: #87ceeb; /* sky blue */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .gummy {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .gummy img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>FurGummies!</h1>
+<div class="gummy">
+  <img src="assets/white_body.png" class="body" alt="Gummy Body">
+  <img src="assets/red_eyes.png" class="eyes" alt="Gummy Eyes">
+</div>
+
+<div class="options">
+  <h3>Body Colors:</h3>
+  <button onclick="chooseBody('white_body.png', 0)">White</button>
+  <button onclick="chooseBody('red_body.png', 10)">Red </button>
+  <button onclick="chooseBody('blue_body.png', 10)">Blue </button>
+
+  <h3>Eye Colors:</h3>
+  <button onclick="chooseEyes('red_eyes.png', 0)">Red</button>
+  <button onclick="chooseEyes('yellow_eyes.png', 10)">yellow </button>
+  <button onclick="chooseEyes('blue_eyes.png', 10)">Blue </button>
+</div>
+
+<p>Coins: <span id="coins">0</span></p>
+
+<script src="script.js"></script>
